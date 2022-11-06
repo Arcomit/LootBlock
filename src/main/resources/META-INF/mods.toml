@@ -1,0 +1,68 @@
+#加载mod的API接口类型,FML的用默认的javafml即可,一般默认即可
+modLoader="javafml" #必填
+
+#加载mod的API接口版本范围,FML的则为forge版本,一般默认即可
+loaderVersion="[36,)" #必填
+
+#开源协议
+license="The MIT License"
+
+#当mod出现问题时,
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #可选
+
+[[mods]] #必填
+
+#MODID,务必与代码一致
+modId="lootblock" #必填
+
+#mod的版本号,默认即可
+version="${file.jarVersion}" #必填
+
+#mod显示的名字
+displayName="Loot Block" #必填
+
+#检测MOD更新的JSON
+updateJSONURL="https://raw.githubusercontent.com/Arcomit/update-mod/main/update.json" #可选
+
+#mod主页链接
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #可选
+
+#模组显示的LOGO
+logoFile="lootblock.png" #可选
+
+#mod的致谢名单
+credits="" #可选
+
+#mod的作者名单
+authors="Arcomit" #可选
+
+#mod描述 (multi line!) (#必填)
+description='''
+我(AbbyQAQ)的测试性娱乐性模组，所有功能均为了玩儿做的。
+'''
+
+#模组依赖.
+#dependencies. + MODID
+[[dependencies.lootblock]] #可选
+#依赖的MODID
+modId="forge" #必填
+
+#该依赖关系是必须存在的吗,若不则请填写ordering
+mandatory=true #必填
+
+#依赖的版本范围
+versionRange="[36,)" #必填
+
+#依赖的加载顺序BEFORE(前) 或 AFTER(后)，还有NONE(无)
+ordering="NONE"
+
+#该依赖适用于那种关系BOTH(两者都), CLIENT(客户端) 或 SERVER(服务端)
+side="BOTH"
+
+#其他依赖
+[[dependencies.lootblock]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
